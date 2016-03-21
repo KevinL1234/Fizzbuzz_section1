@@ -1,4 +1,5 @@
-exports.count = function(start, end) {
+var count, fizzer;
+count = function(start, end) {
 	// create a variable for our output
 	var output = start;
 
@@ -10,4 +11,13 @@ exports.count = function(start, end) {
 
 	// return the output, e.g "1 2 3 4 5"
 	return output;
+};
+
+fizzer = function(num) {
+	return "fizz";
+};
+
+module.exports = {
+	count: count,
+	fizzer: fizzer
 };
