@@ -2,12 +2,12 @@ var count, fizzer, buzzer, fizzbuzzer;
 
 count = function(start, end) {
 	// create a variable for our output
-	var output = start;
+	var output = buzzer(fizzer(fizzbuzzer(start)));
 
 	// modify output to look like what we want
 	for (var i = start; i < end; i += 1) {
 		// code to be repeated goes here
-		output = output + " " + fizzer(i + 1);
+		output = output + " " + buzzer(fizzer(fizzbuzzer(i + 1)));
 	}
 
 	// return the output, e.g "1 2 fizz 4 buzz"
